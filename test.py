@@ -28,7 +28,7 @@ print('\nModel loaded ({0}).'.format(args.model))
 
 # Input images
 inputs = load_images( glob.glob(args.input) )
-print('\nLoaded ({0}) images of size {1}.'.format(inputs.shape[0], 3)#inputs.shape[1:]))
+print('\nLoaded ({0}) images of size {1}.'.format(inputs.shape[0], 3)) #inputs.shape[1:]))
 
 # Compute results
 outputs = predict(model, inputs)
